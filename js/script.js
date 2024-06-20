@@ -5,7 +5,7 @@ const minutos = document.getElementById('minutos')
 const segundos =  document.getElementById('segundos')
 
 //Variável do dia do lançamento
-const lancamento = '01 dec 2023'
+const lancamento = '01 dec 2028'
 
 function countdown() {
 

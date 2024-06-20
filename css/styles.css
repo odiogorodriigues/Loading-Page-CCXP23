@@ -21,14 +21,16 @@ header img{
 main{
     width: 50%;
     background: #514988;
+    margin: 0;
+    padding: 0;
 }
 
 main h1 {
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 85px;
+    font-size: 50px;
+    margin-top: 5px;
     text-align: center;
     color: #F3C61F;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -37,9 +39,9 @@ main h1 {
 main h2 {
     font-family: 'Verdana';
     font-style: normal;
+    padding-top: 10px;
     font-weight: 550;
     font-size: 30px;
-    line-height: 85px;
     text-align: center;
     color: white;
     margin-top: -45px;
@@ -65,8 +67,7 @@ main p {
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 85px;
+    font-size: 50px;
     text-align: center;
     color: #514988
 }
@@ -90,10 +91,11 @@ main p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 10px;
 }
 
 #horario h1{
-    margin-right: 20px;
+    padding-bottom: 5px;
 }
 
 footer {
@@ -101,10 +103,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-}
-
-footer #cards{
-    width: 60%;
 }
 
 footer h2{
@@ -122,25 +120,18 @@ footer #cards img{
 }
 
 footer #botao{
-    width: 45%;
+    margin: auto;
 }
 
 button{
-    padding: 35px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 30px 80px;
     background: #514988;
     border-radius: 20px;
     border: 0;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 130px;
 
     font-family: 'Verdana';
-    font-style: normal;
     font-weight: 700;
     font-size: 35px;
-    line-height: 51px;
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
@@ -149,4 +140,94 @@ button{
 button:hover {
     background-color: yellow;
     color: black;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 40px !important; 
+    }
+    h2 {
+        font-size: 20px !important;
+    }
+    main h2 {
+        font-size: 20px;
+    }
+    main p {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    #cards img {
+        width: 120px !important;
+    }
+    button {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #inform {
+        flex-direction: column;
+    }
+    main {
+        width: 100%;
+    }
+    #countdown {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    button {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    h2 {
+        font-size: 15px !important;
+        margin: -35px 0 0 0 !important;
+    }
+    main h2 {
+        font-size: 15px;
+    }
+    main p {
+        font-size: 15px;
+    }
+    #cards img {
+        width: 80px !important;
+    }
+    button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    button {
+        padding: 5px 20px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 25px !important;
+    }
+    h2 {
+        font-size: 15px !important;
+        line-height: normal !important;
+        padding-top: 15px !important;
+    }
+    p {
+        line-height: 28px !important;
+        padding-bottom: 10px;
+    }
+    br {
+        display: none;
+    }
+    #cards h2 {
+        margin-bottom: 10px !important;
+    }
 }
